@@ -16,23 +16,6 @@ A simple Express.js API for the Todo List application.
 - `PUT /api/tasks/:id` - Update a task or toggle completion
 - `DELETE /api/tasks/:id` - Delete a task
 
-### PUT /api/tasks/:id Usage
-
-**Regular Update:**
-```json
-{
-  "title": "Updated Task Title",
-  "color": "red",
-  "completed": true
-}
-```
-
-**Toggle Completion:**
-```json
-{
-  "toggle": true
-}
-```
 
 ## Setup Instructions
 
