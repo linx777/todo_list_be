@@ -61,6 +61,22 @@ A simple Express.js API for the Todo List application.
    PORT=3001
    ```
 
+### Setting Environment Variables in Production/Remote
+
+**For GitHub Actions (CI/CD):**
+1. Go to your repository → Settings → Secrets and variables → Actions
+2. Add repository secrets:
+   - `DATABASE_URL`: Your production database connection string
+   - `PORT`: Server port (optional, defaults to 3001)
+
+**For Deployment Platforms:**
+- **Vercel**: Set in project settings → Environment Variables
+- **Railway**: Set in environment variables section
+- **Heroku**: Use `heroku config:set DATABASE_URL=...`
+- **DigitalOcean**: Set in app settings → Environment Variables
+
+**Important:** Never commit `.env` files to Git. Use platform-specific environment variable management instead.
+
 3. Set up the database:
    ```bash
    # Generate Prisma client
